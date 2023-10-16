@@ -3,18 +3,15 @@
 # Affichez les infos des cartes réseau de votre PC
 
 nom, adresse MAC et adresse IP de l'interface WiFi
+```
     Adresse MAC : 30-89-4A-D2-5A-AA
     Adresse IP : 10.33.48.10
-
+```
 nom, adresse MAC et adresse IP de l'interface Ethernet
     Carte Ethernet Ethernet :
 ```
-   Statut du média. . . . . . . . . . . . : Média déconnecté
-   Suffixe DNS propre à la connexion. . . :
-   Description. . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
    Adresse physique . . . . . . . . . . . : 08-BF-B8-C2-2A-57
-   DHCP activé. . . . . . . . . . . . . . : Oui
-   Configuration automatique activée. . . : Oui
+   Adresse IP  . . . . . . . . . . . . . . . . .: 192.168.27.1
 ```
 # Affichez votre gateway
     Carte Ethernet VMware Network Adapter VMnet1 : Pas de passerelle spécifiée.
