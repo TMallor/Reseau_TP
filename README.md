@@ -97,3 +97,60 @@ jhgf
 ```
 
 🌞 Prouver que la connexion Internet passe bien par l'autre PC
+
+# III. Manipulations d'autres outils/protocoles côté client
+    1. DHCP
+
+🌞Exploration du DHCP, depuis votre PC
+
+```
+    Serveur DHCP . . . . . . . . . . . . . : 10.33.51.254
+    Bail obtenu. . . . . . . . . . . . . . : mardi 17 octobre 2023 09:00:32
+    Bail expirant. . . . . . . . . . . . . : mercredi 18 octobre 2023 09:00:3
+```
+🌞** Trouver l'adresse IP du serveur DNS que connaît votre ordinateur**
+
+```
+ Serveurs DNS. . .  . . . . . . . . . . : 10.33.10.2
+ ```
+
+ 🌞 Utiliser, en ligne de commande l'outil nslookup (Windows, MacOS) ou dig (GNU/Linux, MacOS) pour faire des requêtes DNS à la main
+
+ ```
+PS C:\Users\tomma> nslookup google.com 8.8.8.8
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    google.com
+Addresses:  2a00:1450:4007:818::200e
+          142.250.179.110
+
+PS C:\Users\tomma> nslookup ynov.com 8.8.8.8
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Réponse ne faisant pas autorité :
+Nom :    ynov.com
+Addresses:  2606:4700:20::ac43:4ae2
+          2606:4700:20::681a:ae9
+          2606:4700:20::681a:be9
+          172.67.74.226
+          104.26.10.233
+          104.26.11.233
+ ```
+# faites un reverse lookup
+ ```
+ PS C:\Users\tomma> nslookup 78.34.2.17 8.8.8.8
+Serveur :   dns.google
+Address:  8.8.8.8
+
+Nom :    cable-78-34-2-17.nc.de
+Address:  78.34.2.17
+
+PS C:\Users\tomma> nslookup 231.34.113.12 8.8.8.8
+Serveur :   dns.google
+Address:  8.8.8.8
+
+*** dns.google ne parvient pas à trouver 231.34.113.12 : Non-existent domain
+```
