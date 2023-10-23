@@ -27,7 +27,7 @@ Durée approximative des boucles en millisecondes :
     🌞 Wireshark it
 
 ```
-voir ping-reseau-pv
+voir Wireshark it 1
 ```
 
 # II. ARP my bro
@@ -91,7 +91,7 @@ Interface : 10.10.10.1 --- 0xa
 🌞 Wireshark it
 
 ```
-voir ping-arp
+voir Wireshark it 2
 ```
 
 # III. DHCP
