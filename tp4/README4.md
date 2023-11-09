@@ -206,9 +206,9 @@ vous avez une nouvelle route par défaut qui a été récupérée dynamiquement
 ```
 la durée de votre bail DHCP est bien de 6 heures
 ```
-[slayz@node1 dhclient]$ cd var/lib/dhclient
+[tom@node1 dhclient]$ cd var/lib/dhclient
 
-[slayz@node1 dhclient]$ cat dhclient.leases
+[tom@node1 dhclient]$ cat dhclient.leases
 lease {
   interface "enp0s3";
   fixed-address 10.4.1.138;
@@ -223,8 +223,9 @@ lease {
   renew 5 2023/11/08 19:20:04;
   rebind 5 2023/10/08 19:20:04;
   expire 5 2023/11/08 19:20:04;
+}
 prouvez que vous avez un accès Internet après cet échange DHCP
-[slayz@node1 ~]$ ping google.com
+[tom@node1 ~]$ ping google.com
 PING google.com (172.217.18.206) 56(84) bytes of data.
 64 bytes from 172.217.18.206 (172.217.18.206): icmp_seq=1 ttl=54 time=32.8 ms
 64 bytes from 172.217.18.206 (172.217.18.206): icmp_seq=2 ttl=54 time=31.3 ms
