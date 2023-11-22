@@ -167,4 +167,4 @@ sudo ip neigh flush all
 ### 3. Accès internet
 🌞Donnez un accès internet à vos machines - config routeur
 
-Vérification du NAT:
+Vérification du NAT: x
