@@ -149,7 +149,7 @@ server {
 
 ```
 [tom@web conf.d]$ sudo systemctl start nginx
-[tom@web conf.d]$  systemctl status nginx
+[tom@web conf.d]$  
 ● nginx.service - The nginx HTTP and reverse proxy server
      Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; preset: disabled)
      Active: active (running) since Tue 2023-11-14 20:41:25 CET; 5min ago
